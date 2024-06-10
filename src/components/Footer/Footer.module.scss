@@ -1,0 +1,22 @@
+footer {
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    padding-bottom: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        font-size: 16px;
+    }
+}

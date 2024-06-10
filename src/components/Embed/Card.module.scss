@@ -1,0 +1,112 @@
+.card {
+    background-image: url('../../assets/img/fundo.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    &__container {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 8, 56, 0.8));
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 70%; 
+        max-width: 600px; 
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    &__profile {
+        margin-top: -70px;
+    }
+
+    &__image {
+        height: 180px;
+        width: 180px;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto 10px;
+        border-radius: 100px;
+        border: 3px solid transparent;
+        position: relative;
+        overflow: hidden;
+        animation: border-glow 4s infinite alternate;
+    }
+
+    @keyframes border-glow {
+        0% {
+            border-left-color: #4a47df;
+        }
+        25% {
+            border-top-color: #99ffcc;
+        }
+        50% {
+            border-right-color: #cc99ff;
+        }
+        75% {
+            border-bottom-color: #99ccff;
+        }
+        100% {
+            border-left-color: #ffcc99;
+        }
+    }
+
+    &__title {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    &__description {
+        color: white;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    &__donateButton {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 8, 56, 0.8));
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 20px;
+        padding: 6px;
+        margin-top: 10px;
+        transform-origin: center;
+        transition:
+            transform 0.5s,
+            background-color 0.5s,
+            border-radius 0.5s;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        img {
+            width: 30px;
+            height: auto;
+            margin-right: 5px;
+        }
+
+        &:hover {
+            border-radius: 1em;
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+    } 
+}    
+
+
+@media (min-width: 1024px) {
+    .card {
+        &__container {
+            width: 90%; 
+        }
+    }
+}
