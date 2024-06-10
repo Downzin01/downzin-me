@@ -27,11 +27,11 @@
 
 <div align="center">
   <h2>💻 Preview プレビュー</h2>
-  <a href="downzin-me.vercel.app">
+  <a href="http://downzin-me.vercel.app">
     <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
   </a>
   <br>
-  <a href="downzin-me.vercel.app">
+  <a href="http://downzin-me.vercel.app">
     <img src="./src/assets/img/preview.png" alt ="Preview Image"/>
   </a>
 </div>
