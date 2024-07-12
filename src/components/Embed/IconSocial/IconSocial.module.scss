@@ -69,6 +69,9 @@
         white-space: nowrap;
     }
 
+    &__tooltip {
+        display: none;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -77,5 +80,9 @@
         justify-content: center;
         align-items: center;
         margin-top: 10px;
+
+        &__tooltip {
+          display: block;
+      }
     }
 }

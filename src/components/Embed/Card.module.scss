@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
 
     &__container {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 8, 56, 0.8));
@@ -17,6 +17,7 @@
         padding: 20px;
         border-radius: 20px;
         text-align: center;
+        transition: opacity 0.5s ease-in-out; /* Add transition for fade-in */
     }
 
     &__profile {
@@ -24,15 +25,14 @@
     }
 
     &__image {
-        height: 180px;
+        height: auto;
         width: 180px;
-        background-size: cover;
-        background-position: center;
-        margin: 0 auto 10px;
-        border-radius: 100px;
+        object-fit: cover;
+        border-radius: 50%;
         border: 3px solid transparent;
         position: relative;
         overflow: hidden;
+        pointer-events: none; 
         animation: border-glow 4s infinite alternate;
     }
 
@@ -56,13 +56,13 @@
 
     &__title {
         color: white;
-        font-size: 30px;
+        font-size: 2rem;
         font-weight: bold;
     }
     
     &__description {
         color: white;
-        font-size: 16px;
+        font-size: 1rem;
         margin: 0;
     }
 
@@ -85,7 +85,7 @@
         a {
             text-decoration: none;
             color: white;
-            font-size: 16px;
+            font-size: 0.8rem;
         }
 
         img {
@@ -100,8 +100,28 @@
             transition: transform 0.3s ease;
         }
     } 
-}    
 
+    .fadeIn {
+        opacity: 0;
+        animation: fadeInAnimation 0.5s forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-width: 830px) {
+    .card {
+        &__donateButton {
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+}
 
 @media (min-width: 1024px) {
     .card {
