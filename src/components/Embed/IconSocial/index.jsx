@@ -20,7 +20,7 @@ export default function IconSocial() {
                         <img src={require(`${texto.iconSrc}`)} alt={texto.altText} />
                         <span className={styles.social_icons__label}>{texto.labelText}</span>
                     </a>
-                    <div className={styles.social_icons__tooltip}> 
+                    <div className={styles.social_icons__tooltip}>
                         <Tooltip
                             anchorSelect={`#tooltip-${index}`}
                             place="bottom"
