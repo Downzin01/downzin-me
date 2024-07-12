@@ -33,13 +33,15 @@ export default function Embed() {
                                 />
                             </>
                         ) : (
-                            <img
-                                id="profile_image"
-                                className={`${styles.card__image} ${isLoading ? '' : styles.fadeIn}`}
-                                src="https://github.com/downzin01.png"
-                                srcSet="https://github.com/downzin01.png 1x, https://github.com/downzin01@2x.png 2x"
-                                alt="Imagem de perfil de Downzin"
-                            />
+                            <div className={` ${isLoading ? '' : styles.fadeIn}`}>
+                                <img
+                                    id="profile_image"
+                                    className={styles.card__image}
+                                    src="https://github.com/downzin01.png"
+                                    srcSet="https://github.com/downzin01.png 1x, https://github.com/downzin01@2x.png 2x"
+                                    alt="Imagem de perfil de Downzin"
+                                />
+                            </div>
                         )}
                         <h1 className={styles.card__title}>Downzin</h1>
                         <p className={styles.card__description}>ただの人</p>
